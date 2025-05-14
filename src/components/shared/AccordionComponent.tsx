@@ -9,15 +9,13 @@ export const AccordionComponent: React.FC<Accordion[]> = (faqs) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
-    // Convierte `faqs` en un array si no lo es
-    const faqsArray = Array.isArray(faqs) ? faqs : Object.values(faqs);
     return (
         <div className="w-full">
-            {faqsArray.map((faq, index) => (
+            {faqs.map((faq, index) => (
                 <div
                     key={index}
                     className={`border-t border-gray-200 ${
-                        index === faqsArray.length - 1 ? "border-b" : ""
+                        index === faqs.length - 1 ? "border-b" : ""
                     }`}
                 >
                     <button
