@@ -15,7 +15,7 @@ export const AccordionRepairs = () => {
                 <span className="text-2xl font-medium mt-8 mb-2.5">
                     What are the repair costs?
                 </span>
-                <AccordionComponent {...dataRepairs} />
+                <AccordionComponent faqs={dataRepairs} />
             </div>
         </>
     );

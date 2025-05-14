@@ -11,7 +11,7 @@ export const AccordionAboutServices = () => {
                 <span className="text-4xl font-medium mb-8">
                     About Services
                 </span>
-                <AccordionComponent {...dataAccordionServices} />
+                <AccordionComponent faqs={dataAccordionServices} />
             </div>
         </>
     );

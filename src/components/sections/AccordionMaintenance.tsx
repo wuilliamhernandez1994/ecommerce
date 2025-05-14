@@ -14,7 +14,7 @@ export const AccordionMaintenance = () => {
                     ready to perform when the season starts, we’ve come up with
                     a packages to cover the basic or extending maintenance.
                 </span>
-                <AccordionComponent {...dataMaintenance} />
+                <AccordionComponent faqs={dataMaintenance} />
             </div>
         </>
     );

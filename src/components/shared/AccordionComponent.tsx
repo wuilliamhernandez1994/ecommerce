@@ -2,7 +2,10 @@ import { useState } from "react";
 import type Accordion from "../../interface/Accordion";
 import { IoIosArrowUp } from "react-icons/io";
 
-export const AccordionComponent: React.FC<Accordion[]> = (faqs) => {
+interface AccordionProps {
+    faqs: Accordion[];
+}
+export const AccordionComponent: React.FC<AccordionProps> = ({ faqs }) => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     const toggle = (index: number) => {

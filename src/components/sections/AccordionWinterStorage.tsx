@@ -15,7 +15,7 @@ export const AccordionWinterStorage = () => {
                     After a season or two it is time to get that new fresh look
                     again.
                 </span>
-                <AccordionComponent {...dataWinterStorage} />
+                <AccordionComponent faqs={dataWinterStorage} />
             </div>
         </>
     );

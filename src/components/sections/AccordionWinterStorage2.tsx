@@ -16,7 +16,7 @@ export const AccordionWinterStorage2 = () => {
                 <span className="text-2xl font-medium mt-8 mb-2.5">
                     Seabob Winter Storage FAQ
                 </span>
-                <AccordionComponent {...dataWinterStorage2} />
+                <AccordionComponent faqs={dataWinterStorage2} />
             </div>
         </>
     );

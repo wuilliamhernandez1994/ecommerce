@@ -14,7 +14,7 @@ export const AccordionWarranty = () => {
                 <span className="text-2xl font-medium mt-8 mb-2.5">
                     Warranty FAQ
                 </span>
-                <AccordionComponent {...dataWarranty} />
+                <AccordionComponent faqs={dataWarranty} />
             </div>
         </>
     );
