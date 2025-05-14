@@ -5,4 +5,6 @@ export * from "./AccordionRepairs";
 export * from "./AccordionWarranty";
 export * from "./AccordionWinterStorage";
 export * from "./AccordionWinterStorage2";
+export * from "./RepairSection";
+export * from "./SupportSection";
 export * from "./index";
