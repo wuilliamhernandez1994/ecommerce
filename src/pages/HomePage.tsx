@@ -10,9 +10,19 @@ export const HomePage = () => {
             <RepairSection />
 
             <BusinessComponent {...maintenancePackages} />
-            {initialData.map((product, index) => (
-                <ProductComponent key={index} {...product} />
-            ))}
+            {initialData.map((product, index) => {
+                if (index === 1) {
+                    // Aquí pones la lógica que deseas ejecutar cuando el índice sea 2
+                    return (
+                        <>
+                            <SupportSection />
+                            <ProductComponent key={index} {...product} />;
+                        </>
+                    );
+                } else {
+                    return <ProductComponent key={index} {...product} />;
+                }
+            })}
 
             <DynamicTabs items={tabs} defaultValue="warranty" />
 

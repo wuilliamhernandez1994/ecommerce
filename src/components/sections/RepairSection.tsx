@@ -32,42 +32,42 @@ const RepairSection = () => {
     }, []);
 
     return (
-        <div className="w-lvw mx-auto sm:-mx-[4.8%] lg:-mx-[13.8%]">
+        <div className="w-lvw mx-auto sm:-mx-[4.8%] lg:-mx-[13.8%] mb-15">
             {/* Hero Section */}
-            <div className="relative bg-gray-900 text-white h-96 flex items-center justify-center">
+            <div className="relative bg-gray-900 text-white flex justify-start font-nunito pt-7 pb-7 md:pb-14">
                 <img
-                    src="/path-to-seabob-engine-image.jpg"
+                    src="/img/seabob-repairpng.png"
                     alt="Seabob animation"
-                    className="absolute inset-0 w-full h-full object-cover opacity-30"
+                    className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-60" />
-                <div className="relative z-10 text-center px-4">
-                    <p className="uppercase tracking-widest text-sm mb-2">
-                        Official Seabob Repair Centre
+                <div className="relative z-10 px-4 w-lvw mx-auto sm:mx-[3.2%] lg:mx-[12.2%]">
+                    <p className="uppercase tracking-widest text-xl md:text-2xl font-normal mb-2 inline-block">
+                        Luxury Toys
+                        {/* <p className="text-xs md:text-sm inline ml-1">Repair</p> */}
                     </p>
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-light">
+                    <p className="text-3xl md:text-4xl font-light">
                         The Fastest, The Easiest and The Cheapest way to get
                         your Seabob fixed.
-                    </h1>
+                    </p>
                 </div>
             </div>
 
             {/* Action Form */}
             <div className="-mt-12 relative z-20 px-4">
-                <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl flex flex-col sm:flex-row items-center p-6">
+                <div className="w-[92%] lg:w-[78%] mx-auto bg-white shadow-lg hidden flex-row md:flex items-center px-4 py-2">
                     {/* "I want to repair my" */}
                     <div
                         className="flex items-center flex-1 w-full sm:w-auto relative"
                         ref={itemRef}
                     >
-                        <span className="text-gray-700 mr-2 whitespace-nowrap">
+                        <span className="text-gray-700 mr-2 whitespace-nowrap text-2xl">
                             I want to repair my
                         </span>
                         <button
                             onClick={() =>
                                 setShowItemDropdown(!showItemDropdown)
                             }
-                            className="text-yellow-500 font-semibold flex items-center focus:outline-none"
+                            className="text-yellow-500 font-normal flex items-center focus:outline-none text-4xl"
                         >
                             {selectedItem}
                             <svg
@@ -110,14 +110,14 @@ const RepairSection = () => {
                         className="flex items-center flex-1 w-full sm:w-auto relative mt-4 sm:mt-0"
                         ref={methodRef}
                     >
-                        <span className="text-gray-700 mr-2 whitespace-nowrap">
+                        <span className="text-gray-700 mr-2 whitespace-nowrap text-2xl">
                             How?
                         </span>
                         <button
                             onClick={() =>
                                 setShowMethodDropdown(!showMethodDropdown)
                             }
-                            className="text-yellow-500 font-semibold flex items-center focus:outline-none"
+                            className="text-yellow-500 font-normal flex items-center focus:outline-none text-4xl"
                         >
                             {selectedMethod}
                             <svg
@@ -154,9 +154,15 @@ const RepairSection = () => {
                     </div>
 
                     {/* Request Button */}
-                    <button className="mt-4 sm:mt-0 bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-yellow-600 transition ml-auto">
+                    {/* <button className="mt-4 sm:mt-0 bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-yellow-600 transition ml-auto">
                         Request a repair
-                    </button>
+                    </button> */}
+                    <a
+                        href=""
+                        className={`text-sm font-medium py-4 px-8 mb-2.5 w-fit [clip-path:polygon(0_0,100%_0,100%_calc(100%-12px),calc(100%-12px)_100%,0_100%)] bg-yellow-500 text-gray-900 hover:bg-yellow-600`}
+                    >
+                        Request a repair
+                    </a>
                 </div>
             </div>
         </div>

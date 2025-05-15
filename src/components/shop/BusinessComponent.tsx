@@ -5,7 +5,7 @@ export const BusinessComponent: React.FC<BusinessServices> = ({
     servicePackages,
 }) => {
     return (
-        <section className="container mx-auto p-8 font-nunitos">
+        <section className="mx-auto p-3 font-nunitos">
             <div className="mb-8">
                 <p className="text-[rgba(25,48,59,0.5)] text-2xl mt-0 mb-0 leading-[normal] font-normal">
                     {business.tagline}

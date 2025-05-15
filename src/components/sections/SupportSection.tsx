@@ -2,74 +2,82 @@ import { FaEnvelope, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 export function SupportSection() {
     return (
-        <section className="bg-white py-12 px-6 md:px-20">
+        <section className="bg-white p-3 md:px-10">
             <div className="max-w-7xl mx-auto">
-                <p className="text-gray-400 text-lg">Need help with repairs?</p>
-                <h2 className="text-4xl font-semibold text-gray-900 mb-6">
+                <p className="text-gray-400 font-normal text-3xl leading-[42px]">
+                    Need help with repairs?
+                </p>
+                <p className="text-[64px] font-normal text-gray-900 mb-6 leading-[72px]">
                     Ask for support
-                </h2>
+                </p>
 
                 <div className="grid md:grid-cols-2 gap-12">
-                    <div>
+                    <div className="pl-8">
                         <p className="text-gray-600 mb-4">
                             Reach out for personalized quotations or special
                             arrangements.
                         </p>
                         <div className="flex items-center mb-3">
-                            <FaEnvelope className="w-5 h-5 mr-3 text-gray-700" />
+                            <FaEnvelope className="w-7 h-7 mr-3 text-gray-700" />
                             <div>
-                                <p className="font-semibold text-gray-800">
+                                <p className="font-normal text-lg text-gray-800">
                                     Email
                                 </p>
-                                <p className="text-gray-600">
+                                <p className="text-gray-600 text-lg">
                                     workshop@oceanpremium.com
                                 </p>
                             </div>
                         </div>
                         <div className="flex items-center">
-                            <FaPhone className="w-5 h-5 mr-3 text-gray-700" />
+                            <FaPhone className="w-7 h-7 mr-3 text-gray-700" />
                             <div>
-                                <p className="font-semibold text-gray-800">
+                                <p className="font-normal text-lg text-gray-800">
                                     Phone
                                 </p>
-                                <p className="text-gray-600">
+                                <p className="text-gray-600 text-lg">
                                     +33 767 25 22 44
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <p className="font-semibold text-gray-900 mb-2">
+                    <div className="pr-8">
+                        <p className="font-semibold text-lg text-gray-900 mb-4">
                             Send an inquiry instead
                         </p>
-                        <p className="text-gray-600 mb-4">
+                        <p className="text-gray-600 text-lg mb-4">
                             Alternatively fill out the form and send us an
                             inquiry. We will come back to you the old fashioned
                             way. In a flash!
                         </p>
-                        <button className="bg-gray-900 text-white px-6 py-3 rounded-md font-medium hover:bg-gray-800">
+                        <a
+                            href=""
+                            className="block text-sm font-semibold py-4 px-8 mb-2.5 w-fit [clip-path:polygon(0_0,100%_0,100%_calc(100%-12px),calc(100%-12px)_100%,0_100%)] bg-gray-900 text-white"
+                        >
                             Repair Inquiry Form
-                        </button>
+                        </a>
                     </div>
                 </div>
 
-                <div className="bg-green-400 mt-12 p-6 rounded-md flex flex-col md:flex-row justify-between items-center">
+                <div className="bg-[#6BCB56] mt-20 p-6 flex flex-col md:flex-row justify-between items-center">
                     <div className="flex items-center mb-4 md:mb-0">
-                        <FaWhatsapp className="w-6 h-6 mr-3 text-white" />
+                        <FaWhatsapp className="w-12 h-12 mr-3 text-white" />
                         <div>
-                            <p className="text-white font-semibold text-lg">
+                            <p className="text-gray-900 font-normal text-2xl">
                                 24H rapid service!
                             </p>
-                            <p className="text-white text-sm">
+                            <p className="text-gray-900 font-normal text-lg">
                                 Talk directly via WhatsApp with one of our
                                 Seabob technicians.
                             </p>
                         </div>
                     </div>
-                    <button className="bg-gray-900 text-white px-5 py-2 rounded-md font-medium hover:bg-gray-800">
+                    <a
+                        href=""
+                        className="block text-lg font-semibold py-4 px-8 mb-2.5 w-fit [clip-path:polygon(0_0,100%_0,100%_calc(100%-12px),calc(100%-12px)_100%,0_100%)] bg-gray-900 text-white hover:bg-gray-800"
+                    >
                         Chat with a specialist
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
