@@ -23,7 +23,7 @@ export const DynamicTabs: React.FC<DynamicTabsProps> = ({
         <Tabs
             selectedIndex={selectedIndex}
             onSelect={(index) => setSelectedIndex(index)}
-            className="w-full p-3"
+            className="p-3 mx-auto w-auto sm:mx-[5%] lg:mx-[10%]"
         >
             <TabList className="flex flex-wrap bg-muted rounded-xl">
                 {items.map((item, index) => {

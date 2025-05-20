@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-const RepairSection = () => {
+export const RepairSection = () => {
     const [itemOptions] = useState(["Seabob F5", "Seabob F7", "Seabob F5s"]);
     const [methodOptions] = useState(["Pick-up", "Drop-off", "Mail-in"]);
     const [showItemDropdown, setShowItemDropdown] = useState(false);
@@ -32,18 +32,19 @@ const RepairSection = () => {
     }, []);
 
     return (
-        <div className="w-lvw mx-auto sm:-mx-[4.8%] lg:-mx-[13.8%] mb-15">
-            {/* Hero Section */}
+        <div className="mb-15">
             <div className="relative bg-gray-900 text-white flex justify-start font-nunito pt-7 pb-7 md:pb-14">
                 <img
                     src="/img/seabob-repairpng.png"
                     alt="Seabob animation"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="relative z-10 px-4 w-lvw mx-auto sm:mx-[3.2%] lg:mx-[12.2%]">
+                <div className="relative z-10 px-3 mx-auto w-auto sm:mx-[5%] lg:mx-[10%]">
                     <p className="uppercase tracking-widest text-xl md:text-2xl font-normal mb-2 inline-block">
                         Luxury Toys
-                        {/* <p className="text-xs md:text-sm inline ml-1">Repair</p> */}
+                        <span className="text-xs md:text-sm inline ml-1">
+                            Repair
+                        </span>
                     </p>
                     <p className="text-3xl md:text-4xl font-light">
                         The Fastest, The Easiest and The Cheapest way to get
@@ -53,8 +54,8 @@ const RepairSection = () => {
             </div>
 
             {/* Action Form */}
-            <div className="-mt-12 relative z-20 px-4">
-                <div className="w-[92%] lg:w-[78%] mx-auto bg-white shadow-lg hidden flex-row md:flex items-center px-4 py-2">
+            <div className="-mt-12 relative z-20">
+                <div className="mx-auto w-auto sm:mx-[5%] lg:mx-[10%] bg-white shadow-lg hidden flex-row md:flex items-center px-4 py-2">
                     {/* "I want to repair my" */}
                     <div
                         className="flex items-center flex-1 w-full sm:w-auto relative"
@@ -67,7 +68,7 @@ const RepairSection = () => {
                             onClick={() =>
                                 setShowItemDropdown(!showItemDropdown)
                             }
-                            className="text-yellow-500 font-normal flex items-center focus:outline-none text-4xl"
+                            className="text-yellow-500 font-normal flex items-center focus:outline-none text-4xl cursor-pointer"
                         >
                             {selectedItem}
                             <svg
@@ -117,7 +118,7 @@ const RepairSection = () => {
                             onClick={() =>
                                 setShowMethodDropdown(!showMethodDropdown)
                             }
-                            className="text-yellow-500 font-normal flex items-center focus:outline-none text-4xl"
+                            className="text-yellow-500 font-normal flex items-center focus:outline-none text-4xl cursor-pointer"
                         >
                             {selectedMethod}
                             <svg
@@ -168,5 +169,3 @@ const RepairSection = () => {
         </div>
     );
 };
-
-export default RepairSection;

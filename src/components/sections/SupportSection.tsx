@@ -1,29 +1,28 @@
 import { FaEnvelope, FaPhone, FaWhatsapp } from "react-icons/fa";
 
-export function SupportSection() {
+export const SupportSection = () => {
     return (
-        <section className="bg-white p-3 md:px-10">
+        <section className="bg-white p-3 mx-auto w-auto sm:mx-[5%] lg:mx-[10%] mt-24">
             <div className="max-w-7xl mx-auto">
-                <p className="text-gray-400 font-normal text-3xl leading-[42px]">
+                <p className="text-gray-400 font-normal text-lg lg:text-3xl leading-[42px]">
                     Need help with repairs?
                 </p>
-                <p className="text-[64px] font-normal text-gray-900 mb-6 leading-[72px]">
+                <p className="text-3xl lg:text-[64px] font-normal text-gray-900 mb-6 leading-[72px]">
                     Ask for support
                 </p>
-
+                <p className="text-gray-600 mb-4">
+                    Reach out for personalized quotations or special
+                    arrangements.
+                </p>
                 <div className="grid md:grid-cols-2 gap-12">
-                    <div className="pl-8">
-                        <p className="text-gray-600 mb-4">
-                            Reach out for personalized quotations or special
-                            arrangements.
-                        </p>
+                    <div className="pl-4 lg:pl-8">
                         <div className="flex items-center mb-3">
                             <FaEnvelope className="w-7 h-7 mr-3 text-gray-700" />
                             <div>
-                                <p className="font-normal text-lg text-gray-800">
+                                <p className="font-normal text-base lg:text-lg text-gray-800">
                                     Email
                                 </p>
-                                <p className="text-gray-600 text-lg">
+                                <p className="text-gray-600 text-base lg:text-lg">
                                     workshop@oceanpremium.com
                                 </p>
                             </div>
@@ -31,10 +30,10 @@ export function SupportSection() {
                         <div className="flex items-center">
                             <FaPhone className="w-7 h-7 mr-3 text-gray-700" />
                             <div>
-                                <p className="font-normal text-lg text-gray-800">
+                                <p className="font-normal text-base lg:text-lg text-gray-800">
                                     Phone
                                 </p>
-                                <p className="text-gray-600 text-lg">
+                                <p className="text-gray-600 text-base lg:text-lg">
                                     +33 767 25 22 44
                                 </p>
                             </div>
@@ -82,4 +81,4 @@ export function SupportSection() {
             </div>
         </section>
     );
-}
+};

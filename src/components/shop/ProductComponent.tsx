@@ -24,7 +24,7 @@ export const ProductComponent: React.FC<ProductInterface> = (props) => {
     return (
         // flex flex-row-reverse
         <div
-            className={`flex flex-col items-center gap-6 mb-2.5 p-3 ${directionClass}`}
+            className={`flex flex-col items-center gap-6 mb-2.5 p-3 ${directionClass} mx-auto w-auto sm:mx-[5%] lg:mx-[10%]`}
         >
             <img
                 src={imageSrc}

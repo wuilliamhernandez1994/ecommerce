@@ -49,7 +49,7 @@ export const FooterComponent = () => {
                     </div>
                 </div>
             </footer>
-            <div className="pt-8 pb-15 text-center">
+            <div className="pt-8 pb-7 lg:pb-15 text-center text-[10px] lg:text-base">
                 © 2010 - 2025 Ocean Premium - Water Toys anytime anywhere.
             </div>
         </>

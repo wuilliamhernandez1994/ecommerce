@@ -23,7 +23,7 @@ export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Contactar por WhatsApp"
-            className="inline-flex items-center justify-center p-2 rounded-full bg-green-500 hover:bg-green-600 transition-colors fixed bottom-[2%] right-[2%]"
+            className="inline-flex items-center justify-center p-2 z-50 rounded-full bg-green-500 hover:bg-green-600 transition-colors fixed bottom-[2%] right-[2%]"
         >
             <FaWhatsapp size={size} className="text-white" />
         </a>

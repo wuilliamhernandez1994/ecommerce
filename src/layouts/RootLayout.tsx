@@ -19,7 +19,7 @@ export const RootLayout = () => {
                     </div>
                 </div>
             ) : null} */}
-            <main className="flex-1 mx-auto w-full sm:w-11/12 lg:w-4/5">
+            <main className="flex-1">
                 <Outlet />
             </main>
             <FooterComponent />
