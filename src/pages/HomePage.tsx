@@ -32,9 +32,9 @@ export const HomePage = () => {
 
             <BusinessComponent {...maintenancePackages} />
 
-            <ShippingSelector />
-
             <CollectionMap />
+
+            <ShippingSelector />
 
             {initialData.map((product, index) => {
                 if (index === 1) {

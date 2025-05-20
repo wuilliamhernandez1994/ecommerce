@@ -78,9 +78,27 @@ export const CollectionMap = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="grid grid-cols-12 gap-4 w-full bg-[#1F303B]">
-            <div className="col-span-12 relative">
-                <div className="relative z-50 p-3 mx-auto w-auto sm:mx-[5%] lg:mx-[10%]">
+        <>
+            <div className="p-3 mx-auto w-auto sm:mx-[5%] lg:mx-[10%]">
+                <div className="">
+                    <p className="text-2xl font-normal text-[rgba(25,48,59,.5)]">
+                        Ocean Premium Repair centre’s. FASTER and CHEAPER than
+                        local provider.
+                    </p>
+                    <p className="text-3xl font-normal mb-6">
+                        How to do I get my Seabob fixed?
+                    </p>
+                    <p className="text-lg font-normal mb-4">
+                        While out there cruising your first concern is how to
+                        get your Water toy to us, right? No worries we have
+                        listed the options below. You can simply choose to drop
+                        off the toy to be repaired in one of Ocean premium’s
+                        service centres.
+                    </p>
+                </div>
+            </div>
+            <div className="flex flex-col gap-4 w-full bg-[#1F303B] md:bg-[url('/img/webMap.svg')] relative h-auto md:h-[775px]">
+                <div className="absolute bottom-0 z-50 p-3 mx-auto w-auto sm:mx-[5%] lg:mx-[10%]">
                     <span className="text-gray-500 text-2xl mb-2">
                         17 Collection points across the Mediterranean
                     </span>
@@ -162,12 +180,7 @@ export const CollectionMap = () => {
                         </a>
                     </div>
                 </div>
-                <div className="hidden md:block absolute bottom-0 w-full">
-                    <img
-                        src="/img/webMap.svg"
-                        alt="Imagen interactiva"
-                        className="w-screen max-w-full block"
-                    />
+                <div className="hidden md:block w-full">
                     {pinsData.map((pin) => (
                         <button
                             key={pin.id}
@@ -217,6 +230,6 @@ export const CollectionMap = () => {
                     )}
                 </div>
             </div>
-        </div>
+        </>
     );
 };
