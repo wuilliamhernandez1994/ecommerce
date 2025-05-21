@@ -81,11 +81,11 @@ export const CollectionMap = () => {
         <>
             <div className="p-3 mx-auto w-auto sm:mx-[5%] lg:mx-[10%]">
                 <div className="">
-                    <p className="text-2xl font-normal text-[rgba(25,48,59,.5)]">
+                    <p className="text-lg md:text-2xl font-normal text-[rgba(25,48,59,.5)]">
                         Ocean Premium Repair centre’s. FASTER and CHEAPER than
                         local provider.
                     </p>
-                    <p className="text-3xl font-normal mb-6">
+                    <p className="text-2xl lg:text-3xl font-normal mb-6">
                         How to do I get my Seabob fixed?
                     </p>
                     <p className="text-lg font-normal mb-4">
@@ -97,8 +97,8 @@ export const CollectionMap = () => {
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 w-full bg-[#1F303B] md:bg-[url('/img/webMap.svg')] relative h-auto md:h-[775px]">
-                <div className="absolute bottom-0 z-50 p-3 mx-auto w-auto sm:mx-[5%] lg:mx-[10%]">
+            <div className="flex flex-col gap-4 w-full bg-[#1F303B] md:bg-[url('/img/webMap.svg')] bg-no-repeat relative h-auto md:h-[775px]">
+                <div className="relative md:absolute bottom-0 z-50 p-3 mx-auto w-auto sm:mx-[5%] lg:mx-[10%]">
                     <span className="text-gray-500 text-2xl mb-2">
                         17 Collection points across the Mediterranean
                     </span>
