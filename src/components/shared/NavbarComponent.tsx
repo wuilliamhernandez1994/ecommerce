@@ -5,7 +5,7 @@ import { LogoComponent } from "./LogoComponent";
 export const NavbarComponent = () => {
     return (
         <div>
-            <header className="grid grid-cols-5 gap-0 bg-white text-black py-4 items-center border-b border-slate-200 mx-auto px-3 w-auto sm:mx-[5%] lg:mx-[10%]">
+            <header className="grid grid-cols-5 gap-0 bg-white text-black items-center border-b border-slate-200 mx-auto px-3 w-auto sm:mx-[5%] lg:mx-[10%]">
                 <div className="col-start-1 col-end-2 flex items-center">
                     <LogoComponent />
                 </div>

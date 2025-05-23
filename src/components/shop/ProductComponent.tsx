@@ -31,7 +31,7 @@ export const ProductComponent: React.FC<ProductInterface> = (props) => {
                 alt=""
                 className="w-full md:w-1/2 max-w-[536px] h-auto object-cover"
             />
-            <div className="flex flex-col font-nunito">
+            <div className="flex flex-col font-nunito w-full">
                 <p className="text-[rgba(25,48,59,0.5)] text-2xl mt-0 mb-0 leading-[normal] font-normal">
                     {title}
                 </p>

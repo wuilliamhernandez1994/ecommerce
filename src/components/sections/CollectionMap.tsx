@@ -6,67 +6,26 @@ type PinData = {
     top: string;
     left: string;
     info: string;
+    img: string;
 };
 
 const pinsData: PinData[] = [
     {
         id: 1,
-        top: "30%",
-        left: "40%",
+        top: "10%",
+        left: "68%",
         info: "Información del pin 1",
+        img: "miami.jpg",
     },
-    {
-        id: 2,
-        top: "49%",
-        left: "47%",
-        info: "Información del pin 2",
-    },
-    {
-        id: 3,
-        top: "40%",
-        left: "30%",
-        info: "Información del pin 3",
-    },
-    {
-        id: 4,
-        top: "57%",
-        left: "34%",
-        info: "Información del pin 4",
-    },
-    {
-        id: 5,
-        top: "35%",
-        left: "21%",
-        info: "Información del pin 5",
-    },
-    {
-        id: 6,
-        top: "12%",
-        left: "57%",
-        info: "Información del pin 6",
-    },
-    // Puedes agregar más pines aquí
 ];
 
 // Lista de ciudades
 const cities = [
-    { name: "Barcelona", value: "barcelona", id: "455" },
-    { name: "Palma de Mallorca", value: "palma-de-mallorca", id: "460" },
-    { name: "Palermo", value: "palermo", id: "516" },
-    { name: "Olbia", value: "olbia", id: "535" },
-    { name: "Naples", value: "naples", id: "504" },
-    { name: "Athens", value: "athens", id: "560" },
-    { name: "Tivat", value: "tivat", id: "554" },
-    { name: "Split", value: "split", id: "549" },
-    { name: "Zadar", value: "zadar", id: "546" },
-    { name: "Rijeka", value: "rijeka", id: "544" },
-    { name: "Livorno", value: "livorno", id: "498" },
-    { name: "Viareggio", value: "viareggio", id: "497" },
-    { name: "La Spezia", value: "la-spezia", id: "496" },
-    { name: "Genova", value: "genova", id: "493" },
-    { name: "Sanremo", value: "sanremo", id: "487" },
-    { name: "La Ciotat", value: "la-ciotat", id: "469" },
-    { name: "Antibes", value: "antibes", id: "477" },
+    {
+        name: "Hialeah FL",
+        value: "hialeah",
+        id: "1",
+    },
 ];
 
 export const CollectionMap = () => {
@@ -74,7 +33,7 @@ export const CollectionMap = () => {
     const activePinData = pinsData.find((pin) => pin.id === activePin);
 
     // Estado para el combo personalizado
-    const [selectedCity, setSelectedCity] = useState(cities[1]);
+    const [selectedCity, setSelectedCity] = useState(cities[0]);
     const [open, setOpen] = useState(false);
 
     return (
@@ -97,7 +56,7 @@ export const CollectionMap = () => {
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 w-full bg-[#1F303B] md:bg-[url('/img/webMap.svg')] bg-no-repeat relative h-auto md:h-[775px]">
+            <div className="flex flex-col gap-4 w-full bg-[#232937] md:bg-[url('/img/usa-fl.svg')] bg-no-repeat bg-contain bg-top relative h-auto md:h-[775px]">
                 <div className="relative md:absolute bottom-0 z-50 p-3 mx-auto w-auto sm:mx-[5%] lg:mx-[10%]">
                     <span className="text-gray-500 text-2xl mb-2">
                         17 Collection points across the Mediterranean
@@ -201,8 +160,9 @@ export const CollectionMap = () => {
                                 position: "absolute",
                                 top: activePinData.top,
                                 left: activePinData.left,
-                                transform: "translate(-50%, -120%)",
+                                transform: "translate(-50%, -130%)",
                                 zIndex: 10,
+                                border: "1px solid #E4E4E6",
                             }}
                             className="bg-white text-black p-2.5 pt-6 rounded-lg shadow-lg flex flex-col items-center"
                         >
@@ -225,7 +185,32 @@ export const CollectionMap = () => {
                                     />
                                 </svg>
                             </button>
+                            <div
+                                className="h-8 w-full bg-no-repeat bg-[length:100%_100%] rounded-sm"
+                                style={{
+                                    backgroundImage: `url('/img/${activePinData.img}')`,
+                                }}
+                            ></div>
                             {activePinData.info}
+                            <svg
+                                width="20"
+                                height="10"
+                                viewBox="0 0 20 10"
+                                style={{
+                                    position: "absolute",
+                                    left: "50%",
+                                    top: "100%",
+                                    transform: "translateX(-50%)",
+                                    zIndex: 10,
+                                }}
+                            >
+                                <polygon
+                                    points="0,0 20,0 10,10"
+                                    fill="white"
+                                    stroke="white"
+                                    strokeWidth="1"
+                                />
+                            </svg>
                         </div>
                     )}
                 </div>
