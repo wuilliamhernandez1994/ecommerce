@@ -87,7 +87,7 @@ export const RepairSection = () => {
                             </svg>
                         </button>
                         {showItemDropdown && (
-                            <ul className="absolute top-full mt-2 left-0 bg-white w-40 z-30">
+                            <ul className="absolute top-full mt-2 left-1/2 bg-white w-40 z-30">
                                 {itemOptions.map((opt) => (
                                     <li
                                         key={opt}
@@ -137,7 +137,7 @@ export const RepairSection = () => {
                             </svg>
                         </button>
                         {showMethodDropdown && (
-                            <ul className="absolute top-full mt-2 left-0 bg-white w-40 z-30">
+                            <ul className="absolute top-full mt-2 left-1/10 bg-white w-40 z-30">
                                 {methodOptions.map((opt) => (
                                     <li
                                         key={opt}
