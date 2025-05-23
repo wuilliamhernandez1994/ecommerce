@@ -14,7 +14,7 @@ const pinsData: PinData[] = [
         id: 1,
         top: "10%",
         left: "68%",
-        info: "Información del pin 1",
+        info: "Miami 681 e 17 Street Hialeah FL,",
         img: "miami.jpg",
     },
 ];
