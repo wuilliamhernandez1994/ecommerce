@@ -5,11 +5,12 @@ export const initialData: Product[] = [
         title: "During your busy season, time is of the essence!",
         category: "Flying doctor",
         categoryDetail: "Quick & Efficient",
+        type: "repair",
         description:
             "Get a Certified technician to carry out repairs on-board.",
         notes: "Our fast deployable mobile Repair Team will come on board and execute a repair within 12 hours. In The Mediterranean. The Caribbean. Worldwide.",
         imageSrc: "/img/repair-request-on-board.webp",
-        price: "1 870,00 €",
+        price: "1 870,00 ",
         priceDetail: "Rush Fee (Travel not included)",
         textButton: "Request a repair onboard",
         classButton: "bg-[#fab900] text-gray-700",
@@ -20,6 +21,7 @@ export const initialData: Product[] = [
         category: "Pre-Season Check",
         categoryDetail:
             "A Seabob health check. To give you that peace of mind.",
+        type: "maintenance",
         features: [
             "Full system check",
             "Diagnostics & upgrades",
@@ -29,7 +31,7 @@ export const initialData: Product[] = [
             "Visual inspection, Functional test, impeller, shaft & main bearing check, e-box seal pressure test, Full Diagnostics including PCB parameters check, Motor initialisation parameters check and re-aligning, Charging module parameters check, Battery internal",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
-        price: "150$",
+        price: "150",
         priceDetail: "",
         textButton: "Schedule Pre-Season Check",
         classButton: "bg-[#19303B] text-white",
@@ -40,6 +42,7 @@ export const initialData: Product[] = [
         category: "Yearly Full Preventive Maintenance",
         categoryDetail:
             "A Full preventive protocol to give you that peace of mind.",
+        type: "maintenance",
         features: [
             "Full system check",
             "Diagnostics & upgrades",
@@ -50,7 +53,7 @@ export const initialData: Product[] = [
             "Seabob is fully checked and disassembled to treat all breaking points. It includes firmware updates, computer diagnostics, operation, visual and safety check, salt + corrosion removal, anti corrosion and deep clean treatment. All O-rings, worn-out spacers, screws, caps and rings gets replaced in the process.",
         imageSrc:
             "/img/seabob-preventive-maintenance-ocean-premium-connection-port.webp",
-        price: "350$",
+        price: "350",
         priceDetail: "",
         textButton: "Schedule Preventive Maintenance",
         classButton: "bg-[#19303B] text-white",
@@ -61,6 +64,7 @@ export const initialData: Product[] = [
         category: "Diagnostics",
         categoryDetail:
             "A Seabob health check. To give you that peace of mind.",
+        type: "maintenance",
         features: [
             "Complete System Check",
             "Full Written Status Report",
@@ -71,7 +75,7 @@ export const initialData: Product[] = [
         notes: "",
         imageSrc:
             "/img/seabob-diagnostics-ocean-premium-scaled-e1707993204530-800x594.webp",
-        price: "200$",
+        price: "200",
         priceDetail: "",
         textButton: "Schedule Diagnostics",
         classButton: "bg-[#19303B] text-white",
@@ -80,11 +84,12 @@ export const initialData: Product[] = [
     {
         title: "Accelerator Repair",
         category: "Accelerator Repair",
+        type: "repair",
         description:
-            "Professional repair service for the accelerator mechanism.",
+            "Restore your Seabob's responsiveness with our expert accelerator repair service. Whether it's wear and tear or malfunctioning parts, our certified technicians will diagnose the issue and replace or repair the accelerator mechanism to ensure smooth and precise control during your rides.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
-        price: "450$",
+        price: "450",
         priceDetail: "",
         textButton: "Schedule Accelerator Repair",
         classButton: "bg-[#19303B] text-white",
@@ -93,12 +98,13 @@ export const initialData: Product[] = [
     {
         title: "Left Control Repair",
         category: "Left Control Repair",
+        type: "repair",
         description:
-            "Professional repair service for the left control assembly.",
+            "Maintain optimal maneuverability with our professional left control repair service. We carefully inspect, diagnose, and fix any mechanical or electronic issues in the control assembly to guarantee reliable operation and ensure your Seabob performs at its best.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
         className: "flex-row-reverse",
-        price: "500$",
+        price: "500",
         priceDetail: "",
         textButton: "Schedule Left Control Repair",
         classButton: "bg-[#19303B] text-white",
@@ -107,11 +113,12 @@ export const initialData: Product[] = [
     {
         title: "Right Control Repair",
         category: "Right Control Repair",
+        type: "repair",
         description:
-            "Professional repair service for the right control assembly.",
+            "Experience seamless steering with our right control repair service. From recalibration to component replacement, we ensure your control system functions like new, delivering precision and safety on the water.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
-        price: "500$",
+        price: "500",
         priceDetail: "",
         textButton: "Schedule Right Control Repair",
         classButton: "bg-[#19303B] text-white",
@@ -120,11 +127,13 @@ export const initialData: Product[] = [
     {
         title: "Screen Repair",
         category: "Screen Repair",
-        description: "Professional repair service for the display screen.",
+        type: "repair",
+        description:
+            "Ensure full visibility of your Seabob's data and system indicators with our screen repair service. We replace or repair damaged or unresponsive displays, using genuine parts to restore clarity and functionality.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
         className: "flex-row-reverse",
-        price: "750$",
+        price: "750",
         priceDetail: "",
         textButton: "Schedule Screen Repair",
         classButton: "bg-[#19303B] text-white",
@@ -133,10 +142,12 @@ export const initialData: Product[] = [
     {
         title: "Color Change",
         category: "Color Change",
-        description: "Full custom color change service.",
+        type: "maintenance",
+        description:
+            "Give your Seabob a fresh, new look with our custom color change service. Choose from a wide range of colors or provide your own design for a completely personalized and professional finish.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
-        price: "800$",
+        price: "800",
         priceDetail: "",
         textButton: "Schedule Color Change",
         classButton: "bg-[#19303B] text-white",
@@ -145,11 +156,12 @@ export const initialData: Product[] = [
     {
         title: "Charging Connector Cleaning",
         category: "Charging Connector Cleaning",
+        type: "maintenance",
         description:
-            "Thorough cleaning of the charging connector to ensure proper contact.",
+            "Maintain a stable and efficient charging experience with our detailed cleaning service. We remove corrosion, dirt, and debris from the connector to prevent charging issues and extend your Seabob’s lifespan.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
-        price: "99$",
+        price: "99",
         priceDetail: "",
         textButton: "Schedule Connector Cleaning",
         classButton: "bg-[#19303B] text-white",
@@ -158,11 +170,13 @@ export const initialData: Product[] = [
     {
         title: "Battery Replacement F5",
         category: "Battery Replacement F5",
-        description: "Replacement of the F5 battery with a new genuine unit.",
+        type: "part",
+        description:
+            "Replace your aging F5 battery with a brand-new, manufacturer-certified unit. This service ensures optimal runtime and performance, restoring your Seabob to its full potential.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
         className: "flex-row-reverse",
-        price: "2 600$",
+        price: "2 600",
         priceDetail: "",
         textButton: "Schedule F5 Battery Replacement",
         classButton: "bg-[#19303B] text-white",
@@ -171,10 +185,12 @@ export const initialData: Product[] = [
     {
         title: "Battery Replacement F5S",
         category: "Battery Replacement F5S",
-        description: "Replacement of the F5S battery with a new genuine unit.",
+        type: "part",
+        description:
+            "Extend your adventures with a new F5S battery. We install only genuine, high-performance batteries to guarantee safety, efficiency, and power you can rely on.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
-        price: "2 900$",
+        price: "2 900",
         priceDetail: "",
         textButton: "Schedule F5S Battery Replacement",
         classButton: "bg-[#19303B] text-white",
@@ -183,10 +199,12 @@ export const initialData: Product[] = [
     {
         title: "Battery Replacement F5SR",
         category: "Battery Replacement F5SR",
-        description: "Replacement of the F5SR battery with a new genuine unit.",
+        type: "part",
+        description:
+            "Keep your high-performance Seabob F5SR in peak condition with our certified battery replacement service. This ensures you get maximum power and endurance out of every charge.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
-        price: "3 200$",
+        price: "3 200",
         priceDetail: "",
         textButton: "Schedule F5SR Battery Replacement",
         classButton: "bg-[#19303B] text-white",
@@ -195,12 +213,13 @@ export const initialData: Product[] = [
     {
         title: "Main Board Replacement",
         category: "Main Board Replacement",
+        type: "part",
         description:
-            "Replacement of the main board with a new manufacturer-certified unit.",
+            "Our main board replacement service provides a full upgrade with an original, factory-tested unit. This restores the control system, enhances performance, and addresses deep-rooted electronic issues.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
         className: "flex-row-reverse",
-        price: "1 100$",
+        price: "1 100",
         priceDetail: "",
         textButton: "Schedule Main Board Replacement",
         classButton: "bg-[#19303B] text-white",
@@ -209,11 +228,12 @@ export const initialData: Product[] = [
     {
         title: "Main Board Repair",
         category: "Main Board Repair",
+        type: "repair",
         description:
-            "Professional repair service for faults on the main board.",
+            "Expert repair service for diagnosing and fixing main board faults. We troubleshoot electronics, perform micro-soldering and restore full functionality using manufacturer standards.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
-        price: "800$",
+        price: "800",
         priceDetail: "",
         textButton: "Schedule Main Board Repair",
         classButton: "bg-[#19303B] text-white",
@@ -222,10 +242,12 @@ export const initialData: Product[] = [
     {
         title: "Motor Replacement",
         category: "Motor Replacement",
-        description: "Replacement of the drive motor with a new genuine unit.",
+        type: "part",
+        description:
+            "Replace your Seabob’s motor with a new, factory-certified drive unit. Ideal for dealing with power loss, abnormal noise, or complete motor failure, this service restores full thrust and efficiency.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
-        price: "680$",
+        price: "680",
         priceDetail: "",
         textButton: "Schedule Motor Replacement",
         classButton: "bg-[#19303B] text-white",
@@ -234,11 +256,13 @@ export const initialData: Product[] = [
     {
         title: "Motor Repair",
         category: "Motor Repair",
-        description: "Professional repair service for motor faults.",
+        type: "repair",
+        description:
+            "Professional diagnosis and repair of internal motor faults. Whether it’s bearing wear, imbalance, or electronic inconsistencies, we ensure a thorough fix with high-quality components.",
         notes: "",
         imageSrc: "/img/seabob-season-ready.webp",
         className: "flex-row-reverse",
-        price: "450$",
+        price: "450",
         priceDetail: "",
         textButton: "Schedule Motor Repair",
         classButton: "bg-[#19303B] text-white",
@@ -247,6 +271,7 @@ export const initialData: Product[] = [
     {
         title: "Prepare your Seabob for a Refit/Off season period",
         category: "Seabob Winterization",
+        type: "maintenance",
         features: [
             "Full system check",
             "Cleaning & Corrosion Treatment",
@@ -255,7 +280,7 @@ export const initialData: Product[] = [
         description:
             "Visual inspection, Functional test, salt residue removal, Internal cleaning, Full Diagnostics including PCB parameters check, Motor initialisation parameters check and re-aligning, Charging module parameters check, Battery internal mismatch voltage check, Battery equalizing, Programming battery storage regime",
         imageSrc: "/img/refurbish-your-seabob.webp",
-        price: "283,00 €",
+        price: "283,00 ",
         textButton: "Store for winterization",
         classButton: "bg-[#19303B] text-white",
         href: "",
@@ -263,6 +288,7 @@ export const initialData: Product[] = [
     {
         title: "During Refit or Off-season period.",
         category: "Seabob Storage",
+        type: "maintenance",
         features: [
             "Weekly, Monthly, Off Season",
             "Controlled Charging protocol",
@@ -272,7 +298,7 @@ export const initialData: Product[] = [
             "Save space in your own facilities. Store your purchases at our storage centers until ready for delivery and embarkment on board. This ensures the water toys are delivered to you in perfect conditions. We make sure the products are properly packed and prepared for delivery, and any batteries fully charged.",
         imageSrc: "/img/store-your-seabob.webp",
         className: "flex-row-reverse",
-        price: "99,00 €",
+        price: "99,00 ",
         textButton: "Rent storage",
         classButton: "bg-[#19303B] text-white",
         href: "",
@@ -280,6 +306,7 @@ export const initialData: Product[] = [
     {
         title: "Full custom paint-job of upper shell",
         category: "Seabob Refurbishment",
+        type: "maintenance",
         features: [
             "Professional Pain job",
             "Custom Colours & Design",
@@ -288,7 +315,7 @@ export const initialData: Product[] = [
         description:
             "Visual inspection, Functional test, salt residue removal, Internal cleaning, Full Diagnostics including PCB parameters check, Motor initialisation parameters check and re-aligning, Charging module parameters check, Battery internal mismatch voltage check, Battery equalising, Programming battery storage regime",
         imageSrc: "/img/winterize-your-seabob.webp",
-        price: "1 197,00 €",
+        price: "1 197,00 ",
         textButton: "Store for winterization",
         classButton: "bg-[#19303B] text-white",
         href: "",

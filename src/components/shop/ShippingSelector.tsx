@@ -2,12 +2,12 @@ import { useState } from "react";
 
 export const ShippingSelector = () => {
     const countries = [
-        { name: "Italy", price: "82€" },
-        { name: "Greece", price: "83€" },
-        { name: "Spain", price: "89€" },
-        { name: "France", price: "85€" },
-        { name: "Croatia", price: "81€" },
-        { name: "Netherlands", price: "81€" },
+        { name: "Italy", price: "82 $" },
+        { name: "Greece", price: "83 $" },
+        { name: "Spain", price: "89 $" },
+        { name: "France", price: "85 $" },
+        { name: "Croatia", price: "81 $" },
+        { name: "Netherlands", price: "81 $" },
     ];
 
     const [selected, setSelected] = useState("Italy");

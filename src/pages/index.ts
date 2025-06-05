@@ -1,3 +1,4 @@
-export * from './AboutPage';
-export * from './HomePage';
-export * from './ShopPage';
+export * from "./MaintenancePage";
+export * from "./PartPage";
+export * from "./RepairPage";
+export * from "./index";

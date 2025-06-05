@@ -12,4 +12,5 @@ export default interface Product {
     textButton?: string;
     classButton?: string;
     href?: string;
+    type?: "part" | "maintenance" | "repair";
 }

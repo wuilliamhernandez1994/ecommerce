@@ -1,5 +1,6 @@
 import React from "react";
 import type ProductInterface from "../../interface/Product";
+import { useNavigate } from "react-router-dom";
 
 export const ProductComponent: React.FC<ProductInterface> = (props) => {
     const {
@@ -18,11 +19,17 @@ export const ProductComponent: React.FC<ProductInterface> = (props) => {
         href,
     } = props;
 
+    const navigate = useNavigate();
+
     const directionClass =
         className == "flex-row-reverse" ? "md:flex-row-reverse" : "md:flex-row";
 
+    const handlePaymentClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        navigate("/pay", { state: { item: title, price } });
+    };
+
     return (
-        // flex flex-row-reverse
         <div
             className={`flex flex-col items-center gap-6 mb-2.5 p-3 ${directionClass} mx-auto w-auto sm:mx-[5%] lg:mx-[10%]`}
         >
@@ -63,7 +70,7 @@ export const ProductComponent: React.FC<ProductInterface> = (props) => {
                 </p>
                 <div className="mb-3.5">
                     <p className="block text-gray-700 text-3xl font-semibold leading-normal">
-                        {price}
+                        {price}$
                         <span className="text-xs font-normal relative bottom-0.5 left-1.5">
                             {priceDetail}
                         </span>
@@ -72,6 +79,7 @@ export const ProductComponent: React.FC<ProductInterface> = (props) => {
                 <a
                     href={href}
                     className={`text-sm font-semibold py-4 px-8 mb-2.5 w-fit [clip-path:polygon(0_0,100%_0,100%_calc(100%-12px),calc(100%-12px)_100%,0_100%)] ${classButton}`}
+                    onClick={handlePaymentClick}
                 >
                     {textButton}
                 </a>

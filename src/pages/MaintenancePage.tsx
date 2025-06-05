@@ -25,7 +25,9 @@ import {
 } from "../data";
 import { dataHeroBanner } from "../data/DataHeroBanner";
 
-export const HomePage = () => {
+export const MaintenancePage = () => {
+    const maintenance = initialData.filter((p) => p.type === "maintenance");
+
     return (
         <>
             <RepairSection />
@@ -36,7 +38,7 @@ export const HomePage = () => {
 
             <ShippingSelector />
 
-            {initialData.map((product, index) => {
+            {maintenance.map((product, index) => {
                 if (index === 1) {
                     // Aquí pones la lógica que deseas ejecutar cuando el índice sea 2
                     return (

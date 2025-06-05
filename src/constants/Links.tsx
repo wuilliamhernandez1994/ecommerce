@@ -8,18 +8,18 @@ import {
 export const navbarLinks = [
     {
         id: 1,
-        title: "Home",
+        title: "Maintenance",
         href: "/",
     },
     {
         id: 2,
-        title: "Shop",
-        href: "shop",
+        title: "Part",
+        href: "part",
     },
     {
         id: 3,
-        title: "About",
-        href: "about",
+        title: "Repair",
+        href: "repair",
     },
 ];
 
