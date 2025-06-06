@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export const SquarePayment = () => {
     async function submitPayment(token: string, price: string) {
-        const response = await fetch("http://93.127.215.27:3001/pay", {
+        const response = await fetch("https://93.127.215.27:3001/pay", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
