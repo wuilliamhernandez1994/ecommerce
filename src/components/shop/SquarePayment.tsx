@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export const SquarePayment = () => {
     async function submitPayment(token: string, price: string) {
-        const response = await fetch("http://localhost:3001/pay", {
+        const response = await fetch("http://93.127.215.27:3001/pay", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -43,8 +43,8 @@ export const SquarePayment = () => {
             </div>
             <div className="w-full sm:w-[45%] p-6 bg-gray-50 rounded-2xl shadow-md">
                 <PaymentForm
-                    applicationId="sandbox-sq0idb-9T4SHyEiNQoERSbMlOVjQQ"
-                    locationId="LW7BCTQTT9S5Q"
+                    applicationId="sq0idp-WCX4Q0AwQbCdYyQZe_ZCzg"
+                    locationId="6BX7C1801EMHK"
                     cardTokenizeResponseReceived={async (token) => {
                         if (token.token) {
                             const { payment } = await submitPayment(
