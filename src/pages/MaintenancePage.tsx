@@ -6,7 +6,6 @@ import {
     CollectionMap,
 } from "../components/sections";
 import {
-    WhatsAppButton,
     DynamicTabs,
     StepByStepGuideBannerComponent,
     TrustedBySection,
@@ -92,12 +91,6 @@ export const MaintenancePage = () => {
             <StepByStepGuideBannerComponent {...dataStepByStepGuideBanner[1]} />
 
             <AccordionAboutServices />
-
-            <WhatsAppButton
-                phoneNumber="+5355208375"
-                message="¡Hola! Me gustaría más información."
-                size={40}
-            />
         </>
     );
 };

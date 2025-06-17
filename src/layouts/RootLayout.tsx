@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { NavbarComponent } from "../components/shared/NavbarComponent";
 import { FooterComponent } from "../components/shared/FooterComponent";
+import { WhatsAppButton } from "../components/shared";
 
 export const RootLayout = () => {
     // const { pathname } = useLocation();
@@ -22,6 +23,11 @@ export const RootLayout = () => {
             <main className="flex-1">
                 <Outlet />
             </main>
+            <WhatsAppButton
+                phoneNumber="+1 (786) 916-7219"
+                message="¡Hola! Me gustaría más información."
+                size={40}
+            />
             <FooterComponent />
         </div>
     );
